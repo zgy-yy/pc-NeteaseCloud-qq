@@ -18,13 +18,13 @@ const Picked: React.FC = () => {
     const [dj,setDj] = useState<DjProgram[]>([])
     useEffect(()=>{
         usePersonalizedPrivateContentList(4).then(data=>{
+            console.log(data)
             setPersonalizedPrivateContentList(data)
         })
         usePersonalizedMv().then(data=>{
             setMv(data)
         })
         usePersonalizedDjProgram().then(data=>{
-            console.log(data)
             setDj(data)
         })
     },[])

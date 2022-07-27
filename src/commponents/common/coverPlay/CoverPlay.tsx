@@ -29,7 +29,6 @@ const CoverPlay: React.FC<{ className?: string, params: Prop | Personalized | Pe
         playCount = param.playCount
     } else if (type == 1) {
         const param = props.params as DjProgram
-        playCount = 99
     } else if (type == 2){
         const param = props.params as Prop
         playCount = param.playCount
@@ -45,9 +44,9 @@ const CoverPlay: React.FC<{ className?: string, params: Prop | Personalized | Pe
             <div className={styles.mask}>
                 <i className={'iconfont icon-bofang'}></i>
             </div>
-            <span
+            {playCount?<span
                 className={`iconfont ${type == 0 ? 'icon-suishenting' : ''} 
-                ${type == 5 ? 'icon-bofang' : ''}`}>{useNumberFormat(playCount)}</span>
+                ${type == 5 ? 'icon-bofang' : ''}`}>{useNumberFormat(playCount)}</span>:''}
         </div>
         {
             type !== 2 ? <p className={styles.dic}>
