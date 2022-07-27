@@ -1,0 +1,32 @@
+@import "src/assets/theme";
+.key{
+  font-size: .8rem;
+  color: $border-color-base;
+  display: flex;
+  white-space: nowrap;
+  align-items: start;
+  //border: 1px solid red;
+  margin: 1rem 0;
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    span{
+      color: #242424;
+      box-sizing: border-box;
+      margin: 0 1rem;
+      padding: 0 .5rem;
+      border-radius: .2rem;
+      height: 1.2rem;
+      line-height: 1.2rem;
+    }
+  }
+}
+.checked{
+  color: white!important;
+  background: $selected-bg;
+}
+
+.artis{
+  display: flex;
+  flex-wrap: wrap;
+}

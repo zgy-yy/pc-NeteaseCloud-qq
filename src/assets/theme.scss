@@ -1,0 +1,8 @@
+$selected-bg:rgb(45 212 191 / 1);
+$border-color-base: #dcdfe6;
+$hover-color:#2dd4bf;
+$light-color:#fff;
+$select-menu:#34d399;
+@mixin bgImg{
+  background-image: linear-gradient(90deg,#2dd4bf,#34d399)!important;
+}

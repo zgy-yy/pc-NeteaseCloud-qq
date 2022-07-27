@@ -1,0 +1,20 @@
+@import "src/assets/theme.scss";
+.container{
+  display: flex;
+  align-items: center;
+  .cover{
+    border: 1px solid $border-color-base;
+    height: 1.6rem;
+    width:  1.6rem;
+    border-radius: 1rem;
+    margin-right: .5rem;
+  }
+  span:first-of-type{
+    font-size: 1rem;
+  }
+
+  span{
+    margin: .1rem .3rem;
+    font-size: 1.2rem;
+  }
+}

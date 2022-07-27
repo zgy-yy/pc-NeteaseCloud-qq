@@ -1,0 +1,21 @@
+@import "src/assets/theme";
+
+.headerContainer{
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.navBar{
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.nav{
+  font-size: 1.4rem!important;
+  padding: 0 .5rem;
+  &:hover{
+    color: $hover-color;
+  }
+}

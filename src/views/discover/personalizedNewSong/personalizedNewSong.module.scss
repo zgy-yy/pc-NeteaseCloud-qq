@@ -1,11 +1,58 @@
 .container{
-  width: 25%;
+  width: 19%;
   display: flex;
+  margin: .6% 1% .4% 0;
+  border-radius: .1rem;
+  overflow: hidden;
+  &:hover{
+    background: #ccced5;
+  }
   img{
-    height: 2rem;
-    width: 2rem;
+    border-radius: .2rem;
+    height: 3rem;
+    //width: 2rem;
   }
   .msg{
+    padding-left: .5rem;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    .singer{
+      font-size: .6rem;
+      color: #78787c;
+    }
+  }
+}
 
+@media screen and (max-width: 1500px){
+  .container{
+    width: 47.9%;
+    display: flex;
+    margin: 1% 2.1% .4% 0;
+    border-radius: .1rem;
+    overflow: hidden;
+    &:hover{
+      background: #ccced5;
+    }
+    img{
+      border-radius: .2rem;
+      height: 3rem;
+      //width: 2rem;
+    }
+    .msg{
+      padding-left: .5rem;
+      font-size: .8rem;
+      display: flex;
+      flex-direction: column;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      .singer{
+        font-size: .6rem;
+        color: #78787c;
+      }
+    }
   }
 }

@@ -1,0 +1,44 @@
+@import "src/assets/theme";
+
+.container {
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  .menu {
+    position: sticky;
+    background: white;
+    top: -.9rem;
+    display: flex;
+    z-index: 99;
+    height: 2rem;
+
+    .selectBar {
+      position: absolute;
+      width: 2rem;
+      border: 1px solid  $select-menu;;
+      bottom: 0;
+      margin: 0;
+      transition: all .15s ease-in;
+    }
+
+    p {
+      text-align: center;
+      margin:0 2rem;
+      white-space: nowrap;
+      &:hover{
+        color: $select-menu;
+      }
+      &:nth-of-type(2){
+        margin-left: 0;
+      }
+      &:last-of-type{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.selectedMenu {
+  color: $select-menu;
+}

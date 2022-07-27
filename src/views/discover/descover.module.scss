@@ -1,0 +1,21 @@
+.container{
+  text-align: start;
+  &>p{
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    font-family: "Helvetica Neue";
+  }
+
+  .personalized{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .newSong{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .mv{
+    display: flex;
+    align-items: center;
+  }
+}

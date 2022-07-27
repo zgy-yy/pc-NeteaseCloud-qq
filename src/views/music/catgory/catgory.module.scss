@@ -1,0 +1,46 @@
+
+.tags{
+  display: grid;
+  grid-template-columns: repeat(12,auto);
+  grid-gap: .6rem;
+  p{
+    background: #e6e6e6;
+    height: 2rem;
+    line-height: 2;
+    border-radius: .3rem;
+    box-sizing: border-box;
+    text-align: center;
+    &:hover{
+      color: white;
+    }
+  }
+}
+.curTag{
+  background: #2dd4bf!important;
+  color: white;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  .cover{
+    width: 14.2%;
+  }
+}
+
+.title{
+  margin: 1rem 0 1rem 0;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 1500px){
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    .cover{
+      width: 20%;
+    }
+  }
+  .tags{
+    grid-template-columns: repeat(8,auto);
+  }
+}

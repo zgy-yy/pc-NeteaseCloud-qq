@@ -1,3 +1,46 @@
-.container{
 
+.swiper {
+  margin: 1rem 0;
+  display: flex;
+  overflow: hidden;
+
+  .banner {
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    width: 25%;
+    padding: .2rem 1.4rem 0 0;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: .6rem;
+      pointer-events: none;
+      list-style: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .swiper {
+    margin: 1rem 0;
+    display: flex;
+    overflow: hidden;
+
+    .banner {
+      transition: all 0.5s ease;
+      box-sizing: border-box;
+      width: 50%;
+      padding: .2rem .6rem 0 0;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: .6rem;
+        pointer-events: none;
+        list-style: none;
+      }
+    }
+  }
 }
