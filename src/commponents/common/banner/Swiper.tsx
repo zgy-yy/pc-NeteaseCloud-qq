@@ -13,7 +13,7 @@ const Swiper: React.FC = () => {
     },[])
 
     setTimeout(()=>{
-        setOffset(offset-1<-3?0:offset-1)
+        // setOffset(offset-1<-3?0:offset-1)
     },3000)
 
     return <div className={styles.swiper}>

@@ -3,26 +3,31 @@
   display: flex;
 
   .item {
-    width: 24%;
     box-sizing: border-box;
     display: flex;
     background: #f0f1f3;
+    border-radius: .2rem;
     margin: .5% .5% .5% 0;
     overflow: hidden;
+    width: 50%;
+
     .cover {
-      width: 38%;
+      width: 10rem;
+      margin: 0;
+      padding: 0;
     }
 
     .right {
-
       width: 43%;
       display: flex;
       flex-direction: column;
       padding-left: 6%;
       justify-content: space-around;
-      .song{
+
+      .song {
         font-size: .4rem;
-        p{
+
+        p {
           white-space: nowrap;
           text-overflow: ellipsis;
           overflow: hidden;
@@ -37,12 +42,14 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1500px) {
 
   .gar {
     display: flex;
     flex-wrap: wrap;
+
     .item {
+      border-radius: .2rem;
       width: 49%;
       flex-shrink: 0;
       box-sizing: border-box;
@@ -51,8 +58,11 @@
       background: #f0f1f3;
       margin: .5% .5% .5% 0;
       overflow: hidden;
+
       .cover {
-        width: 28%;
+        width: 10rem;
+        margin: 0;
+        padding: 0;
       }
 
       .right {
@@ -63,9 +73,11 @@
         flex-direction: column;
         padding-left: 6%;
         justify-content: space-around;
-        .song{
+
+        .song {
           font-size: .4rem;
-          p{
+
+          p {
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;

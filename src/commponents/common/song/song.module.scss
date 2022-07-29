@@ -1,0 +1,14 @@
+
+.song {
+  display: grid;
+  grid-template-columns: 5fr 3fr 4fr 1fr;
+  column-gap: 3rem;
+  p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: .6rem;
+    padding: .2rem 0;
+    margin: .1rem 0;
+  }
+}

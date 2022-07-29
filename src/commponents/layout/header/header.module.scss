@@ -1,6 +1,8 @@
 @import "src/assets/theme";
 
 .headerContainer{
+  flex-shrink: 0;
+  margin-top: 1rem;
   height: 3.5rem;
   display: flex;
   align-items: center;
@@ -8,13 +10,12 @@
   margin-bottom: 1rem;
 }
 .navBar{
-  margin: 0 2rem;
   display: flex;
   align-items: center;
 }
 .nav{
   font-size: 1.4rem!important;
-  padding: 0 .5rem;
+  padding: 0 1rem 0 0;
   &:hover{
     color: $hover-color;
   }

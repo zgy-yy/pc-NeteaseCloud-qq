@@ -72,7 +72,7 @@ const Catgory: React.FC = () => {
                     return <CoverPlay
                         className={sy.cover}
                         key={item.id}
-                        params={{type: 0, name: item.name, picUrl: item.coverImgUrl, playCount: item.playCount}}/>
+                        params={{id:item.id,type: 0, name: item.name, picUrl: item.coverImgUrl, playCount: item.playCount}}/>
                 })
             }
         </div>

@@ -16,10 +16,14 @@
 }
 
 
-body,div,p,span,ul,li,ol,h1,h2,h3{
+body,div,p,span,ul,li,ol{
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+h1 ,h2, h3{
+  padding: 0;
+  margin: .3rem 0 0 0;
 }
 
 

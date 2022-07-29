@@ -10,19 +10,39 @@
     display: flex;
 }
 
+.showMask.App::before {
+    width: 100%;
+    height: 100%;
+    background: rgba(127, 127, 127, 0.47);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    content: '';
+    content: '';
+}
+
 .main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
 }
-.view{
-    padding-top: .6rem;
+
+.view {
     padding-left: 3rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    height:calc(100% - 4.7rem);
+}
+
+.view > div {
     overflow: scroll;
     scrollbar-width: none; /* firefox */
     -ms-overflow-style: none; /* IE 10+ */
 }
-.view::-webkit-scrollbar{
+
+.view > div::-webkit-scrollbar {
     display: none; /* Chrome Safari */
 }

@@ -93,7 +93,7 @@
     content: "\e6d8";
 }
 
-.icon-suijibofang:before {
+.icon-single:before {
     content: "\e6d9";
 }
 
@@ -117,7 +117,7 @@
     content: "\e6de";
 }
 
-.icon-xunhuanbofang:before {
+.icon-random:before {
     content: "\e6df";
 }
 
@@ -145,7 +145,7 @@
     content: "\e6af";
 }
 
-.icon-shuizhu:before {
+.icon-sequence:before {
     content: "\e6b0";
 }
 

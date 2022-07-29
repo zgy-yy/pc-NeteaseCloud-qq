@@ -131,10 +131,13 @@ export async function usePersonalizedMv() {
     return result
 }
 
+
+//推荐电台
 export async function usePersonalizedDjProgram() {
     const {result} = await http.get<{ result: DjProgram[] }>('personalized/djprogram')
     return result
 }
+
 
 
 export async function useVideoGroupList() {

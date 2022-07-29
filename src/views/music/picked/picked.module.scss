@@ -3,11 +3,14 @@
 }
 .vid{
   display: flex;
+  flex-wrap: wrap;
 }
 .dj{
   display: flex;
+  flex-wrap: wrap;
 }
 .mv{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }

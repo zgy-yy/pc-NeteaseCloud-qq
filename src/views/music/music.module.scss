@@ -8,16 +8,16 @@
   .menu {
     position: sticky;
     background: white;
-    top: -.8rem;
+    top: 0;
     display: flex;
-    z-index: 99;
+    z-index: 8;
     height: 2rem;
 
     .selectBar {
       position: absolute;
       width: 2rem;
       border: 1px solid  $select-menu;;
-      bottom: 0;
+      bottom: .3rem;
       margin: 0;
       transition: all .15s ease-in;
     }

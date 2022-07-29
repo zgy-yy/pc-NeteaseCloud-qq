@@ -1,0 +1,163 @@
+
+.playerBox {
+  border-top: 1px solid #938b8b;
+  position: relative;
+
+  .pressBar {
+    position: absolute;
+    transform: translateY(-1px);
+    border-top: 1px solid #07f807;
+    &:hover{
+
+      span {
+        border: 6px solid #eec80b;
+        border-radius: 3rem;
+        position: absolute;
+        transform: translate3d(50%,-51%,0);
+        right: 0;
+      }
+    }
+  }
+
+  //border-top: 1px solid #6e6868;
+  padding-left: 3rem;
+  padding-right: 2rem;
+  flex-shrink: 0;
+  height: 4.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .musicInfo {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      height: 3rem;
+      width: 3rem;
+      border-radius: .2rem;
+    }
+
+    div {
+      margin-left: .8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 60%;
+      overflow: hidden;
+
+      p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0;
+        line-height: .9rem;
+        margin: 0;
+        font-size: .7rem;
+      }
+
+      p:last-of-type {
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+  }
+
+  .opt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 1.5rem;
+      margin: 0 .56rem;
+    }
+
+    span:nth-of-type(3) {
+      font-size: 2.1rem;
+      color: #34d399;
+    }
+  }
+
+  .time {
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    span {
+      margin: 0 .3rem;
+    }
+
+    span:last-of-type {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.list {
+  width: 21.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  overflow: scroll;
+  background: white;
+  z-index: 999;
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+
+  p {
+    margin: .1rem 0;
+    padding: .2rem .2rem .1rem .8rem;
+    font-size: 1.1rem;
+  }
+
+  p:last-of-type {
+    font-size: .3rem;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      margin-right: .4rem;
+    }
+  }
+
+  div {
+    margin: .1rem 0;
+    padding: .3rem .2rem .1rem .8rem;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    align-items: center;
+
+    img {
+      width: 2.1rem;
+      object-fit: cover;
+    }
+
+    p {
+      font-size: .7rem;
+    }
+
+    p:first-of-type {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      overflow: hidden;
+      margin-right: 1rem;
+
+      span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+      }
+    }
+  }
+}
